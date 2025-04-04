@@ -85,16 +85,21 @@ const Gallery = () => {
   ];
   
   const images: MediaItem[] = [
-    { id: 14, type: 'image', source: '/lovable-uploads/805102d5-1dad-4d54-b906-2a074040bef3.png', title: 'DJ Performance 1' },
-    { id: 15, type: 'image', source: '/lovable-uploads/f8d0d903-96da-43fd-8552-7cd7dbec03c7.png', title: 'DJ Performance 2' },
-    { id: 16, type: 'image', source: '/lovable-uploads/a975b13e-db2e-49f6-a737-f5b13fce415c.png', title: 'DJ Performance 3' },
-    { id: 17, type: 'image', source: '/lovable-uploads/fe0a6269-cc91-455a-9394-7217d10f7c45.png', title: 'DJ Performance 4' },
-    { id: 18, type: 'image', source: '/lovable-uploads/df14c691-d85f-4063-b3d7-06426413ad8a.png', title: 'DJ Performance 5' },
-    { id: 19, type: 'image', source: '/lovable-uploads/f56ae3fd-04fc-4634-a169-8de24555fb07.png', title: 'DJ Performance 6' },
-    { id: 20, type: 'image', source: '/lovable-uploads/403ad394-6d9b-4043-91bd-174fdb821d37.png', title: 'DJ Performance 7' },
-    { id: 21, type: 'image', source: '/lovable-uploads/0df84798-500a-4cd2-afe3-12c12a190ce9.png', title: 'DJ Performance 8' },
-    { id: 22, type: 'image', source: '/lovable-uploads/c8a98cdc-02fb-4880-9499-d492934b6e24.png', title: 'DJ Performance 9' },
-    { id: 23, type: 'image', source: '/lovable-uploads/2fda2dfa-51be-4cfd-b57e-552a881bac89.png', title: 'DJ Performance 10' },
+    { id: 14, type: 'image', source: '/lovable-uploads/2.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/3.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/4.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/5.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/6.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/7.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/8.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/9.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/10.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/11.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/12.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/13.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/14.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/15.png', title: 'DJ Performance 1' },
+    { id: 14, type: 'image', source: '/lovable-uploads/image.png', title: 'DJ Performance 1' },
   ];
   
   const mediaItems = [...videos, ...images];
