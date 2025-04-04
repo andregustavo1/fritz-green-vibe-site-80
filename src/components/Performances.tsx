@@ -39,8 +39,8 @@ const Performances = () => {
   
   return (
     <section id="performances" className="py-24 bg-fritzgreen-black">
-      <div className="container mx-auto px-4" ref={ref}>
-        <div className={`mb-16 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className="container mx-auto px-4">
+        <div ref={ref as React.RefObject<HTMLDivElement>} className={`mb-16 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="section-title mb-4 relative inline-block">
             Performances
             <span className="absolute bottom-0 left-0 w-1/2 h-1 bg-fritzgreen-accent"></span>

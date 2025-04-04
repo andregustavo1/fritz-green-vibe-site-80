@@ -5,6 +5,8 @@ import About from "@/components/About";
 import Music from "@/components/Music";
 import Performances from "@/components/Performances";
 import TechSetup from "@/components/TechSetup";
+import NextDates from "@/components/NextDates";
+import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -31,6 +33,8 @@ const Index = () => {
       <About />
       <Music />
       <Performances />
+      <NextDates />
+      <Gallery />
       <TechSetup />
       <Contact />
       <Footer />
