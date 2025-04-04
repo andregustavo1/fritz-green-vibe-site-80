@@ -50,8 +50,11 @@ const Music = () => {
   
   return (
     <section id="musica" className="py-24 bg-gradient-to-b from-fritzgreen-black to-fritzgreen-gray-400/10">
-      <div className="container mx-auto px-4" ref={ref}>
-        <div className={`text-center mb-16 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+      <div className="container mx-auto px-4">
+        <div 
+          ref={ref as React.RefObject<HTMLDivElement>} 
+          className={`text-center mb-16 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+        >
           <h2 className="section-title mb-4">Ouça Fritz Green</h2>
           <p className="text-fritzgreen-gray-100 max-w-2xl mx-auto">Sets e produções originais</p>
         </div>

@@ -3,8 +3,8 @@ import { useEffect } from "react";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Music from "@/components/Music";
-import Performances from "@/components/Performances";
-import TechSetup from "@/components/TechSetup";
+import NextDates from "@/components/NextDates";
+import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
@@ -29,9 +29,9 @@ const Index = () => {
       <div className="scroll-indicator" style={{ position: 'fixed', top: 0, left: 0, height: '3px', background: '#00FF00', zIndex: 9999, width: '0%' }}></div>
       <Hero />
       <About />
+      <NextDates />
       <Music />
-      <Performances />
-      <TechSetup />
+      <Gallery />
       <Contact />
       <Footer />
     </div>
