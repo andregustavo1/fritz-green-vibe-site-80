@@ -1,12 +1,43 @@
 
 import { useState, useEffect } from 'react';
+import { Instagram, Facebook, Youtube, Mail, Phone } from 'lucide-react';
+
+const SocialLink = ({ icon: Icon, href }: { icon: React.ElementType, href: string }) => (
+  <a 
+    href={href} 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="social-icon"
+  >
+    <Icon size={20} />
+  </a>
+);
 
 const Hero = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [scrollProgress, setScrollProgress] = useState(0);
   
   useEffect(() => {
     setIsLoaded(true);
+    
+    // Para a barra de progresso
+    const handleScroll = () => {
+      const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrolled = (window.scrollY / windowHeight) * 100;
+      setScrollProgress(scrolled);
+    };
+    
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
+  // Update the scroll indicator width
+  useEffect(() => {
+    const scrollIndicator = document.querySelector('.scroll-indicator');
+    if (scrollIndicator) {
+      (scrollIndicator as HTMLElement).style.width = `${scrollProgress}%`;
+    }
+  }, [scrollProgress]);
   
   return (
     <section id="inicio" className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -40,11 +71,20 @@ const Hero = () => {
           
           <a 
             href="https://wa.me/+5500000000000?text=Olá,%20gostaria%20de%20ouvir%20seus%20sets" 
-            className="btn bg-fritzgreen-white text-fritzgreen-black hover:bg-fritzgreen-accent transition-all transform hover:scale-105" 
+            className="btn bg-fritzgreen-white text-fritzgreen-black hover:bg-fritzgreen-accent transition-all transform hover:scale-105 mb-8" 
             target="_blank" rel="noopener noreferrer"
           >
             Ouça Meus Sets
           </a>
+          
+          {/* Social media icons */}
+          <div className="flex justify-center space-x-4 mt-8">
+            <SocialLink icon={Instagram} href="https://instagram.com/fritzgreen" />
+            <SocialLink icon={Facebook} href="https://facebook.com/fritzgreenmusic" />
+            <SocialLink icon={Youtube} href="https://youtube.com/@fritzgreendj" />
+            <SocialLink icon={Mail} href="mailto:contato@fritzgreen.com" />
+            <SocialLink icon={Phone} href="https://wa.me/+5500000000000?text=Olá,%20gostaria%20de%20informações" />
+          </div>
         </div>
       </div>
       

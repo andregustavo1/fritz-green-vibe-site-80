@@ -1,6 +1,5 @@
 
 import { useEffect } from "react";
-import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Music from "@/components/Music";
@@ -26,7 +25,8 @@ const Index = () => {
 
   return (
     <div className="bg-fritzgreen-black text-fritzgreen-white min-h-screen">
-      <Header />
+      {/* Add just the scroll indicator here */}
+      <div className="scroll-indicator" style={{ position: 'fixed', top: 0, left: 0, height: '3px', background: '#00FF00', zIndex: 9999, width: '0%' }}></div>
       <Hero />
       <About />
       <Music />
