@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { useInView } from '@/hooks/use-intersection-observer';
 import { Play } from 'lucide-react';
 
 const MusicPlayer = ({ title, url }: { title: string, url: string }) => {

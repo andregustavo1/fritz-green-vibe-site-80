@@ -1,5 +1,5 @@
 
-import { useInView } from 'react-intersection-observer';
+import { useInView } from '@/hooks/use-intersection-observer';
 import { Phone, Mail, Instagram, Facebook, Youtube } from 'lucide-react';
 
 const SocialLink = ({ icon: Icon, label, href }: { icon: React.ElementType, label: string, href: string }) => (

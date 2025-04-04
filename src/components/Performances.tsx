@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { useInView } from '@/hooks/use-intersection-observer';
 
 const PerformanceImage = ({ image, title, location }: { image: string, title: string, location: string }) => {
   const [isHovered, setIsHovered] = useState(false);
