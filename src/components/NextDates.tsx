@@ -50,16 +50,6 @@ const NextDates = () => {
             </tbody>
           </table>
         </div>
-        
-        <div className={`mt-12 text-center transition-all duration-700 delay-300 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <a 
-            href="https://wa.me/+5500000000000?text=Olá,%20gostaria%20de%20informações%20sobre%20próximos%20shows" 
-            className="btn bg-transparent border-fritzgreen-white text-fritzgreen-white hover:bg-fritzgreen-accent hover:text-fritzgreen-black hover:border-fritzgreen-accent"
-            target="_blank" rel="noopener noreferrer"
-          >
-            Ver Agenda Completa
-          </a>
-        </div>
       </div>
     </section>
   );

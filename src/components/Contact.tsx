@@ -39,11 +39,11 @@ const Contact = () => {
           <div className="mb-8">
             <p className="text-fritzgreen-gray-100 mb-2">Porto Alegre/RS</p>
             <a 
-              href="https://wa.me/+5500000000000?text=Olá,%20gostaria%20de%20informações%20sobre%20shows" 
+              href="https://wa.me/5551999338425?text=Olá,%20gostaria%20de%20informações%20sobre%20shows" 
               className="text-fritzgreen-white hover:text-fritzgreen-accent transition-colors"
               target="_blank" rel="noopener noreferrer"
             >
-              +55 (00) 0000-0000
+              +55 (51) 9933-8425
             </a>
           </div>
           
@@ -52,13 +52,13 @@ const Contact = () => {
             <SocialLink icon={Facebook} label="Facebook" href="https://facebook.com/fritzgreenmusic" />
             <SocialLink icon={Youtube} label="YouTube" href="https://youtube.com/@fritzgreendj" />
             <SocialLink icon={Mail} label="Email" href="mailto:contato@fritzgreen.com" />
-            <SocialLink icon={Phone} label="Telefone" href="https://wa.me/+5500000000000?text=Olá,%20gostaria%20de%20informações" />
+            <SocialLink icon={Phone} label="Telefone" href="https://wa.me/5551999338425?text=Olá,%20gostaria%20de%20informações" />
           </div>
         </div>
         
         <div className={`mt-16 text-center transition-all duration-700 delay-400 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <a 
-            href="https://wa.me/+5500000000000?text=Olá,%20gostaria%20de%20informações%20sobre%20shows" 
+            href="https://wa.me/5551999338425?text=Olá,%20gostaria%20de%20informações%20sobre%20shows" 
             className="btn bg-fritzgreen-accent text-fritzgreen-black border-fritzgreen-accent transform hover:scale-105"
             target="_blank" rel="noopener noreferrer"
           >
