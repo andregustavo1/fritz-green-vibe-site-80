@@ -24,14 +24,6 @@ const MusicPlayer = ({ title, url }: { title: string, url: string }) => {
           </div>
         </div>
       </div>
-      
-      <iframe 
-        className="w-full h-20"
-        src={url} 
-        title={title}
-        allow="autoplay"
-        loading="lazy"
-      ></iframe>
     </div>
   );
 };
@@ -55,6 +47,10 @@ const Music = () => {
       title: "Fritz Green - Analog 22.01.22", 
       url: "https://hearthis.at/fritzgreen/fritz-green-analog-220122/" 
     },
+    { 
+      title: "Fritz Green - Analog 22.01.22", 
+      url: "https://hearthis.at/fritzgreen/fritz-green-analog-220122/" 
+    }
   ];
   
   return (
