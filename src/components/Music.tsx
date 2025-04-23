@@ -7,25 +7,27 @@ const MusicPlayer = ({ title, url }: { title: string, url: string }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   
   return (
-    <div className="bg-fritzgreen-black/50 backdrop-blur-sm border border-fritzgreen-gray-400/30 rounded-md overflow-hidden group hover:border-fritzgreen-accent transition-all duration-300">
+    <div className="bg-fritzgreen-black/50 backdrop-blur-sm border border-fritzgreen-gray-400/30 rounded-md overflow-hidden">
       <div className="p-4 flex items-center space-x-4">
-        <div 
-          className="w-12 h-12 bg-fritzgreen-black rounded-full flex items-center justify-center cursor-pointer group-hover:bg-fritzgreen-accent transition-colors"
-          onClick={() => setIsPlaying(!isPlaying)}
+        <a 
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="w-12 h-12 bg-fritzgreen-black rounded-full flex items-center justify-center cursor-pointer hover:bg-fritzgreen-accent transition-colors"
         >
-          <Play size={18} className="text-fritzgreen-white group-hover:text-fritzgreen-black transition-colors" />
-        </div>
+          <Play size={18} className="text-fritzgreen-white hover:text-fritzgreen-black transition-colors" />
+        </a>
         
         <div className="flex-1">
           <h4 className="text-fritzgreen-white font-medium truncate">{title}</h4>
           <div className="mt-2 h-2 bg-fritzgreen-gray-400/30 rounded-full overflow-hidden">
-            <div className="h-full bg-fritzgreen-accent w-0 group-hover:w-[60%] transition-all duration-1000"></div>
+            <div className="h-full bg-fritzgreen-accent w-[60%]"></div>
           </div>
         </div>
       </div>
       
       <iframe 
-        className="w-full h-0 group-hover:h-20 transition-all duration-300"
+        className="w-full h-20"
         src={url} 
         title={title}
         allow="autoplay"
@@ -53,6 +55,10 @@ const Music = () => {
     { 
       title: "Fritz Green - Earthdance 2023", 
       url: "https://hearthis.at/fritzgreen/fritz-green-earthdance-2023/" 
+    },
+    { 
+      title: "Fritz Green - Analog 22.01.22", 
+      url: "https://hearthis.at/fritzgreen/fritz-green-analog-220122/" 
     },
   ];
   
