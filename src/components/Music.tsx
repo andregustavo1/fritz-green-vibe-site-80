@@ -42,10 +42,18 @@ const Music = () => {
   });
   
   const tracks = [
-    { title: "Deep House Set - Summer 2025", url: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/fritzgreen" },
-    { title: "Techno Mix - Club Edition", url: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/fritzgreen" },
-    { title: "Progressive House Journey", url: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/fritzgreen" },
-    { title: "Electronic Vibes - Vol. 3", url: "https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/fritzgreen" },
+    { 
+      title: "Fritz Green - Earthdance 2024", 
+      url: "https://hearthis.at/fritzgreen/fritz-green-earthdance-2024/" 
+    },
+    { 
+      title: "Fritzland", 
+      url: "https://hearthis.at/fritzgreen/fritzland/" 
+    },
+    { 
+      title: "Fritz Green - Earthdance 2023", 
+      url: "https://hearthis.at/fritzgreen/fritz-green-earthdance-2023/" 
+    },
   ];
   
   return (

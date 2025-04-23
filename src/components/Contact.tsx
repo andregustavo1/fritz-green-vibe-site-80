@@ -30,10 +30,10 @@ const Contact = () => {
         
         <div className={`flex flex-col items-center transition-all duration-700 delay-200 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <a 
-            href="mailto:contato@fritzgreen.com" 
+            href="mailto:fritzdj@gmail.com" 
             className="text-fritzgreen-white text-xl md:text-2xl hover:text-fritzgreen-accent transition-colors mb-6"
           >
-            contato@fritzgreen.com
+            fritzdj@gmail.com
           </a>
           
           <div className="mb-8">
@@ -43,7 +43,7 @@ const Contact = () => {
               className="text-fritzgreen-white hover:text-fritzgreen-accent transition-colors"
               target="_blank" rel="noopener noreferrer"
             >
-              +55 (51) 9933-8425
+              +55 (51) 999-338-425
             </a>
           </div>
           
@@ -51,7 +51,7 @@ const Contact = () => {
             <SocialLink icon={Instagram} label="Instagram" href="https://instagram.com/fritzgreen" />
             <SocialLink icon={Facebook} label="Facebook" href="https://facebook.com/fritzgreenmusic" />
             <SocialLink icon={Youtube} label="YouTube" href="https://youtube.com/@fritzgreendj" />
-            <SocialLink icon={Mail} label="Email" href="mailto:contato@fritzgreen.com" />
+            <SocialLink icon={Mail} label="Email" href="mailto:fritzdj@gmail.com" />
             <SocialLink icon={Phone} label="Telefone" href="https://wa.me/5551999338425?text=Olá,%20gostaria%20de%20informações" />
           </div>
         </div>
