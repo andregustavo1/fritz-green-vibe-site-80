@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { useInView } from '@/hooks/use-intersection-observer';
 import { Play } from 'lucide-react';
@@ -48,8 +49,8 @@ const Music = () => {
       url: "https://hearthis.at/fritzgreen/fritz-green-analog-220122/" 
     },
     { 
-      title: "Fritz Green - Analog 22.01.22", 
-      url: "https://hearthis.at/fritzgreen/fritz-green-analog-220122/" 
+      title: "Fritz Green - Fritzland", 
+      url: "https://hearthis.at/fritzgreen/fritzland/" 
     }
   ];
   
@@ -109,3 +110,4 @@ const Music = () => {
 };
 
 export default Music;
+
