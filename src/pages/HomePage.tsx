@@ -1,13 +1,12 @@
 import React from 'react';
 import { Images } from 'lucide-react';
-import Image from 'next/image';
 
 const HomePage = () => {
   return (
     <div className="container mx-auto px-4 py-8">
       {/* Add logo before photos */}
       <div className="flex justify-center mb-8">
-        <Image 
+        <img 
           src="/logo.png" 
           alt="Fritz Green Logo" 
           width={300} 

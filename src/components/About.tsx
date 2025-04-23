@@ -22,7 +22,7 @@ const About = () => {
 
   return (
     <section id="sobre" className="py-24 bg-fritzgreen-black">
-      <div className="container mx-auto px-4" ref={ref}>
+      <div className="container mx-auto px-4" ref={ref as React.RefObject<HTMLDivElement>}>
         <div className={`grid md:grid-cols-2 gap-12 items-center`}>
           <div className={`transition-all duration-700 ${inView ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
             <h2 className="section-title mb-6 relative inline-block">
