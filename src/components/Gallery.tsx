@@ -107,6 +107,15 @@ const Gallery = () => {
   return (
     <section id="galeria" className="py-24 bg-fritzgreen-black">
       <div className="container mx-auto px-4">
+        {/* Logo Section */}
+        <div className="flex justify-center mb-16">
+          <img 
+            src="/lovable-uploads/5bfd46d9-2ea3-417c-a60d-1e3f6aa9de49.png"
+            alt="Fritz Green Logo"
+            className="w-64 h-auto animate-pulse"
+          />
+        </div>
+
         <div ref={ref as React.RefObject<HTMLDivElement>} className={`mb-16 transition-all duration-700 ${inView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <h2 className="section-title mb-4 relative inline-block">
             Galeria
@@ -131,3 +140,4 @@ const Gallery = () => {
 };
 
 export default Gallery;
+
