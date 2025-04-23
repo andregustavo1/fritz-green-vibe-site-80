@@ -13,7 +13,7 @@ const NextDates = () => {
     { date: '09/05', event: 'TBA', city: 'POA' },
     { date: '14/06', event: 'PRIVATE PARTY', city: 'POA' },
     { date: '26/07', event: 'TBA', city: 'POA' },
-    { date: '26/09', event: 'EARTHDANCE', city: 'Capão da Canoa' },
+    { date: '21/09', event: 'EARTHDANCE', city: 'Capão da Canoa' }, // Updated date
   ];
   
   return (

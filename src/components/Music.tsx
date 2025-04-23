@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { useInView } from '@/hooks/use-intersection-observer';
 import { Play } from 'lucide-react';
@@ -47,10 +46,6 @@ const Music = () => {
     { 
       title: "Fritz Green - Earthdance 2024", 
       url: "https://hearthis.at/fritzgreen/fritz-green-earthdance-2024/" 
-    },
-    { 
-      title: "Fritzland", 
-      url: "https://hearthis.at/fritzgreen/fritzland/" 
     },
     { 
       title: "Fritz Green - Earthdance 2023", 

@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useInView } from '@/hooks/use-intersection-observer';
 import { Music, Headphones } from 'lucide-react';
@@ -60,7 +59,7 @@ const About = () => {
               <div className="absolute -top-4 -left-4 w-24 h-24 border-l-2 border-t-2 border-fritzgreen-accent"></div>
               <div className="absolute -bottom-4 -right-4 w-24 h-24 border-r-2 border-b-2 border-fritzgreen-accent"></div>
               <img 
-                src="/lovable-uploads/f49880a4-6d69-4701-b77d-e8143241df24.png" 
+                src="/lovable-uploads/d0ccd410-d27e-4c07-bb18-3e9b5221cc45.png" 
                 alt="Fritz Green DJ" 
                 className="w-full h-auto rounded-md grayscale hover:grayscale-0 transition-all duration-500" 
               />
